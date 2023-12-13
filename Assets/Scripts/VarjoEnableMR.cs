@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Varjo.XR;
 
-public class VarjoManager : MonoBehaviour
+public class VarjoEnableMR : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -11,4 +11,5 @@ public class VarjoManager : MonoBehaviour
         VarjoRendering.SetOpaque(false);
         VarjoMixedReality.StartRender();
     }
+
 }

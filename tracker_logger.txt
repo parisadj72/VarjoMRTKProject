@@ -63,3 +63,118 @@
 [2023-12-12 19:09:41.563] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
 [2023-12-12 19:09:44.581] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12346
 [2023-12-12 19:09:46.881] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12347
+[2023-12-13 08:54:06.465] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 08:54:06.469] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 08:54:09.357] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12346
+[2023-12-13 08:54:09.359] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 08:54:09.359] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 08:54:10.361] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 08:54:10.361] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 08:54:11.363] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 08:54:11.363] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 08:54:12.365] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 08:54:12.365] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 08:54:13.368] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 08:54:13.369] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 08:54:16.411] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12346
+[2023-12-13 08:54:18.456] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12347
+[2023-12-13 08:54:20.493] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12348
+[2023-12-13 08:54:23.358] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12349
+[2023-12-13 08:54:29.941] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 08:54:29.941] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 08:54:32.518] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12346
+[2023-12-13 08:54:32.520] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 08:54:32.520] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 08:54:33.523] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 08:54:33.523] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 08:54:47.114] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 08:54:47.114] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 08:54:49.192] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12346
+[2023-12-13 08:54:49.194] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 08:54:49.194] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 08:54:50.195] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 08:54:50.195] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 08:54:51.197] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 08:54:51.197] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 08:54:52.199] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 08:54:52.199] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 08:54:53.201] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 08:54:53.201] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 08:54:56.241] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12346
+[2023-12-13 08:54:58.275] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12347
+[2023-12-13 08:55:00.317] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12348
+[2023-12-13 08:55:02.356] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12349
+[2023-12-13 08:55:04.398] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12350
+[2023-12-13 08:55:06.443] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12351
+[2023-12-13 08:55:08.483] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12352
+[2023-12-13 08:55:10.515] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12353
+[2023-12-13 08:55:12.777] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12354
+[2023-12-13 08:57:13.094] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 08:57:13.094] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 08:57:15.131] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12346
+[2023-12-13 08:57:15.133] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 08:57:15.133] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 08:57:16.135] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 08:57:16.135] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 08:57:17.136] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 08:57:17.137] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 08:57:18.138] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 08:57:18.138] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 08:57:19.141] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 08:57:19.141] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 08:57:22.935] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12346
+[2023-12-13 11:38:25.787] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 11:38:25.789] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 11:38:28.767] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12346
+[2023-12-13 11:38:28.769] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 11:38:28.769] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 11:38:29.771] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 11:38:29.771] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 11:38:30.773] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 11:38:30.773] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 11:38:34.308] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12346
+[2023-12-13 11:38:34.310] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 11:38:34.310] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 11:38:44.514] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 11:38:44.514] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 11:38:46.572] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12346
+[2023-12-13 11:38:46.574] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 11:38:46.574] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 11:38:47.576] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 11:38:47.577] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 11:38:48.579] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 11:38:48.579] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 11:38:49.582] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 11:38:49.582] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 11:38:50.584] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 11:38:50.584] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 11:38:53.637] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12346
+[2023-12-13 11:38:55.670] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12347
+[2023-12-13 11:38:57.706] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12348
+[2023-12-13 11:38:59.747] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12349
+[2023-12-13 11:39:01.784] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12350
+[2023-12-13 11:39:03.780] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12351
+[2023-12-13 12:38:43.205] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 12:38:43.206] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 12:38:45.526] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12346
+[2023-12-13 12:38:45.528] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 12:38:45.528] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 12:38:46.531] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 12:38:46.531] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 12:38:47.533] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 12:38:47.534] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 12:43:56.973] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 12:43:56.973] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 12:43:59.276] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12346
+[2023-12-13 12:43:59.278] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 12:43:59.278] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 12:44:00.280] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 12:44:00.280] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 12:44:01.282] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 12:44:01.282] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 12:44:02.284] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 12:44:02.284] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 12:44:03.286] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12345
+[2023-12-13 12:44:03.286] [console] [info] leap::LeapSession::Authenticate()#82:  Sending authentication request
+[2023-12-13 12:44:06.340] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12346
+[2023-12-13 12:44:08.371] [console] [info] leap::LeapConnection::HandleTryConnect()#259:  Connecting to port: 12347
