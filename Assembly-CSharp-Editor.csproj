@@ -57,6 +57,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
+    <Compile Include="Assets\ProceduralUIImage\Editor\ProceduralImageEditor.cs" />
+    <Compile Include="Assets\ProceduralUIImage\Editor\ProceduralImageEditorUtility.cs" />
+    <Compile Include="Assets\ProceduralUIImage\Editor\ModifierUtility.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
