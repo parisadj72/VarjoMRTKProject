@@ -1,3 +1,5 @@
+using Microsoft.MixedReality.Toolkit.Utilities;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,17 +8,88 @@ public class HandMountedMenuHandler : MonoBehaviour
 {
 
     public GameObject displayCollection;
+
+    public GameObject flat3;
+    public GameObject flat6;
+    public GameObject flat15;
+    public GameObject curve3;
+    public GameObject curve6;
+    public GameObject curve15;
+    public GameObject stack3;
+    public GameObject stack6;
+    public GameObject stack15;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        Reset();
+        //displayCollection.transform.GetChild(8).gameObject.SetActive(false);
     }
-
+    
     // Update is called once per frame
     void Update()
     {
         
     }
+
+    private void Reset()
+    {
+        flat3.SetActive(false);
+        flat6.SetActive(false);
+        flat15.SetActive(false);
+        curve3.SetActive(false);
+        curve6.SetActive(false);
+        curve15.SetActive(false);
+        stack3.SetActive(false);
+        stack6.SetActive(false);
+        stack15.SetActive(false);
+    }
+    public void Flat_3()
+    {
+        Reset();
+        flat3.SetActive(true);
+    }
+    public void Flat_6()
+    {
+        Reset();
+        flat6.SetActive(true);
+    }
+    public void Flat_15()
+    {
+        Reset();
+        flat15.SetActive(true);
+    }
+    public void Curve_3()
+    {
+        Reset();
+        curve3.SetActive(true);
+    }
+    public void Curve_6()
+    {
+        Reset();
+        curve6.SetActive(true);
+    }
+    public void Curve_15()
+    {
+        Reset();
+        curve15.SetActive(true);
+    }
+    public void Stack_3()
+    {
+        Reset();
+        stack3.SetActive(true);
+    }
+    public void Stack_6()
+    {
+        Reset();
+        stack6.SetActive(true);
+    }
+    public void Stack_15()
+    {
+        Reset();
+        stack15.SetActive(true);
+    }
+
 
     public void ThreeDisplaysToggle()
     {
@@ -77,7 +150,42 @@ public class HandMountedMenuHandler : MonoBehaviour
         }
     }
 
+    public void SwitchLayoutsToFlat()
+    {
+        TileGridObjectCollection tileGridObjectCollection = displayCollection.GetComponent<TileGridObjectCollection>();
+        tileGridObjectCollection.gameObject.SetActive(false);
 
+        GridObjectCollection gridObjectCollection = displayCollection.GetComponent<GridObjectCollection>();
+        gridObjectCollection.SurfaceType = ObjectOrientationSurfaceType.Plane;
+        gridObjectCollection.CellHeight = 1.2f;
+        gridObjectCollection.CellWidth =  1.2f;
+        gridObjectCollection.OrientType = OrientationType.FaceParentFoward;
+        displayCollection.transform.GetChild(8).gameObject.SetActive(true);
+        gridObjectCollection.UpdateCollection();
+
+        displayCollection.transform.GetChild(8).gameObject.SetActive(false);
+    }
+    public void SwitchLayoutsToCylinder()
+    {
+        TileGridObjectCollection tileGridObjectCollection = displayCollection.GetComponent<TileGridObjectCollection>();
+        tileGridObjectCollection.gameObject.SetActive(false);
+
+        GridObjectCollection gridObjectCollection = displayCollection.GetComponent<GridObjectCollection>();
+        gridObjectCollection.SurfaceType = ObjectOrientationSurfaceType.Cylinder;
+        gridObjectCollection.CellHeight = 2;
+        gridObjectCollection.CellWidth = 2;
+        gridObjectCollection.Radius = 3;
+        gridObjectCollection.OrientType = OrientationType.FaceCenterAxis;
+        displayCollection.transform.GetChild(8).gameObject.SetActive(true);
+        gridObjectCollection.UpdateCollection();
+
+        displayCollection.transform.GetChild(8).gameObject.SetActive(false);
+    }
+    public void SwitchLayoutsToStack()
+    {
+        TileGridObjectCollection tileGridObjectCollection = displayCollection.GetComponent<TileGridObjectCollection>();
+        tileGridObjectCollection.gameObject.SetActive(true);
+    }
     //Sets the menu panel in front of the user.
     public void SetTransformInFrontOfCamera(GameObject panel)
     {
