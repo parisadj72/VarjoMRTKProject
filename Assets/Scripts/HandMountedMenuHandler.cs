@@ -1,3 +1,4 @@
+using Microsoft.MixedReality.Toolkit.UI;
 using Microsoft.MixedReality.Toolkit.Utilities;
 using System;
 using System.Collections;
@@ -19,77 +20,221 @@ public class HandMountedMenuHandler : MonoBehaviour
     public GameObject stack6;
     public GameObject stack15;
 
+    public int score { get; private set; } = 0;
+    public bool task1 { get; private set; } = false;
+    public bool task2 { get; private set; } = false;
+    public bool task3 { get; private set; } = false;
+
     // Start is called before the first frame update
     void Start()
     {
-        Reset();
+        DeactiveAllLayouts();
         //displayCollection.transform.GetChild(8).gameObject.SetActive(false);
     }
-    
+
     // Update is called once per frame
     void Update()
     {
-        
+        if (task1)
+        {
+            if (flat3.activeSelf && AllBlack(flat3) && score <= 5)
+            {
+                RunNTimes(flat3);
+            }
+            else if (flat6.activeSelf && AllBlack(flat6) && score <= 5)
+            {
+                RunNTimes(flat6);
+            }
+            else if (flat15.activeSelf && AllBlack(flat15) && score <= 5)
+            {
+                RunNTimes(flat15);
+            }
+            else if (curve3.activeSelf && AllBlack(curve3) && score <= 5)
+            {
+                RunNTimes(curve3);
+            }
+            else if (curve6.activeSelf && AllBlack(curve6) && score <= 5)
+            {
+                RunNTimes(curve6);
+            }
+            else if (curve15.activeSelf && AllBlack(curve15) && score <= 5)
+            {
+                RunNTimes(curve15);
+            }
+            else if (stack3.activeSelf && AllBlack(stack3) && score <= 5)
+            {
+                RunNTimes(stack3);
+            }
+            else if (stack6.activeSelf && AllBlack(stack6) && score <= 5)
+            {
+                RunNTimes(stack6);
+            }
+            else if (stack15.activeSelf && AllBlack(stack15) && score <= 5)
+            {
+                RunNTimes(stack15);
+            }
+        }
+    }
+    private void DeactiveLayout(GameObject layout)
+    {
+        layout.SetActive(false);
+    }
+    private void DeactiveAllLayouts()
+    {
+        DeactiveLayout(flat3);
+        DeactiveLayout(flat6);
+        DeactiveLayout(flat15);
+        DeactiveLayout(curve3);
+        DeactiveLayout(curve6);
+        DeactiveLayout(curve15);
+        DeactiveLayout(stack3);
+        DeactiveLayout(stack6);
+        DeactiveLayout(stack15);
     }
 
-    private void Reset()
+    public void ScreenClickDetected(GameObject cube)
     {
-        flat3.SetActive(false);
-        flat6.SetActive(false);
-        flat15.SetActive(false);
-        curve3.SetActive(false);
-        curve6.SetActive(false);
-        curve15.SetActive(false);
-        stack3.SetActive(false);
-        stack6.SetActive(false);
-        stack15.SetActive(false);
+        if(cube.GetComponent<Renderer>().material.color == Color.white) // new Color(242, 243, 244))
+        {
+            cube.GetComponent<Renderer>().material.color = Color.black; // new Color(0, 0, 0);
+            score += 1;
+        }
     }
-    public void Flat_3()
+    public void ActivateLayout(GameObject layout)
     {
-        Reset();
-        flat3.SetActive(true);
+        DeactiveAllLayouts();
+        layout.SetActive(true);
+        score = 0;
     }
-    public void Flat_6()
+    public void ActivateTask1()
     {
-        Reset();
-        flat6.SetActive(true);
+        task2 = false;
+        task3 = false;
+        task1 = true;
     }
-    public void Flat_15()
+    public void ActivateTask2()
     {
-        Reset();
-        flat15.SetActive(true);
+        task1 = false;
+        task3 = false;
+        task2 = true;
     }
-    public void Curve_3()
+    public void ActivateTask3()
     {
-        Reset();
-        curve3.SetActive(true);
+        task1 = false;
+        task2 = false;
+        task3 = true;
     }
-    public void Curve_6()
+    public void startTask1() //select random white screen
     {
-        Reset();
-        curve6.SetActive(true);
+        if (flat3.activeSelf)
+        {
+            ColorScreensBlack(flat3);
+            // find a random cube screen
+            int randomNumber = UnityEngine.Random.Range(1, 4);
+            // change the color of that screen to white
+            flat3.transform.GetChild(randomNumber).GetComponent<Renderer>().material.color = Color.white; // new Color(242, 243, 244);
+            // wait for user to click on it
+            // flat3.transform.GetChild(randomNumber).GetComponent<Interactable>().OnClick.AddListener();
+        }
     }
-    public void Curve_15()
+    private void ColorScreensBlack(GameObject layout)
     {
-        Reset();
-        curve15.SetActive(true);
-    }
-    public void Stack_3()
-    {
-        Reset();
-        stack3.SetActive(true);
-    }
-    public void Stack_6()
-    {
-        Reset();
-        stack6.SetActive(true);
-    }
-    public void Stack_15()
-    {
-        Reset();
-        stack15.SetActive(true);
+        // set the color of all screen to black
+        foreach (Transform t in layout.transform)
+        {
+            t.GetComponent<Renderer>().material.color = Color.black; // new Color(0, 0, 0);
+        }
     }
 
+    private void RunNTimes(GameObject layout)
+    {
+        if (AllBlack(layout))
+        {
+            // find a random cube screen
+            int randomNumber = UnityEngine.Random.Range(0, layout.transform.childCount);
+            // change the color of that screen to white
+            layout.transform.GetChild(randomNumber).GetComponent<Renderer>().material.color = Color.white; // new Color(242, 243, 244);
+        }
+    }
+    private bool AllBlack(GameObject layout)
+    {
+        foreach (Transform t in layout.transform)
+        {
+            if (t.GetComponent<Renderer>().material.color != Color.black) //new Color(0, 0, 0))
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /*private void screenColorFunc()
+{
+   if ()
+   {
+       // find a random cube screen
+       int randomNumber = UnityEngine.Random.Range(1, 4);
+       // change the color of that screen to white
+       foreach (Transform t in flat3.transform)
+       {
+           t.GetComponent<Renderer>().material.color = new Color(0, 0, 0);
+       }
+       flat3.transform.GetChild(randomNumber).GetComponent<Renderer>().material.color = new Color(242, 243, 244);
+   }
+}
+*/
+    public void startTask2() // select the ball in each screen
+    {
+        if (flat3.activeSelf)
+        {
+            {
+                // find a random cube screen
+                int randomNumber = UnityEngine.Random.Range(1, 4); //1 2 3
+                // find a radom position in the front side of the cube screen
+                Vector3 minPosition = flat3.transform.GetChild(randomNumber).GetComponent<Collider2D>().bounds.min;
+                Vector3 maxPosition = flat3.transform.GetChild(randomNumber).GetComponent<Collider2D>().bounds.max;
+                Vector3 randomPosition = new Vector3(
+                    UnityEngine.Random.Range(minPosition.x, maxPosition.x),
+                    UnityEngine.Random.Range(minPosition.y, maxPosition.y),
+                    minPosition.z
+                );
+                //position the ball
+
+            } //repeat five times
+        }
+        else if (flat6.activeSelf)
+        {
+
+        }
+        else if (flat15.activeSelf)
+        {
+
+        }
+        else if (curve3.activeSelf)
+        {
+
+        }
+        else if (curve6.activeSelf)
+        {
+
+        }
+        else if (curve15.activeSelf)
+        {
+
+        }
+        else if (stack3.activeSelf)
+        {
+
+        }
+        else if (stack6.activeSelf)
+        {
+
+        }
+        else if (stack15.activeSelf)
+        {
+
+        }
+    }
 
     public void ThreeDisplaysToggle()
     {
